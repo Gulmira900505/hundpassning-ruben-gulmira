@@ -1,41 +1,248 @@
 body {
-    font-family: arial;
+  margin: 0;
+  background: #ffffff;
+  color: #2c2c2c;
+  font-family: 'Work Sans', sans-serif;
+  line-height: 1.6;
 }
 
-.panels {
-    display: flex;
-    gap: 20px;
+h1, h2, h3 {
+  font-family: 'Quicksand', sans-serif;
+  color: #3c6e47;
+  margin: 0 0 12px 0;
 }
 
-#left {
-    flex: 1;
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Fick hjälp av chatgpt */
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+header {
+  border-bottom: 2px solid #eee;
+  padding: 16px 0;
+}
+
+.logo {
+  float: left;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #3c6e47;
+  padding-top: 8px;
+}
+
+.btn {
+  display: inline-block;
+  background: #3c6e47;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+header .btn {
+  float: right;
+}
+
+.btn:hover {
+  background: #2f5738;
+}
+
+.btn-big {
+  padding: 14px 28px;
+  font-size: 1.05rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.hero-img {
+  border-radius: 10px;
+  margin: 0 auto 24px auto;
+  width: 100%;
+  height: auto;
+}
+
+.hero h1 {
+  font-size: 1.9rem;
+  max-width: 380px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero p {
+  max-width: 400px;
+  margin: 16px auto 24px auto;
+  color: #555;
+}
+
+.block {
+  padding: 44px 0;
+}
+
+.block.alt {
+  background: #f7f7f2;
+}
+
+.block h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 28px;
+}
+
+.service {
+  float: left;
+  width: 29%;
+  margin-right: 5%;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  text-align: center;
+  min-height: 200px;
+}
+
+.service:last-child {
+  margin-right: 0;
+}
+
+.service-content {
+  padding: 20px;
+}
+
+.service h3 {
+  font-size: 1.05rem;
+  color: #3c6e47;
+}
+
+.service p {
+  margin: 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.gallery-item {
+  float: left;
+  width: 30%;
+  margin-right: 5%;
+  height: 140px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.gallery-item:last-child {
+  margin-right: 0;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.pricing {
+  width: 100%;
+  border-collapse: collapse;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.pricing td {
+  padding: 12px 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.pricing td:last-child {
+  text-align: right;
+  font-weight: 600;
+  color: #3c6e47;
+  white-space: nowrap;
+}
+
+.note {
+  text-align: center;
+  color: #777;
+  font-size: 0.9rem;
+  margin-top: 16px;
+}
+
+.cta {
+  background: #3c6e47;
+  color: #fff;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.cta h2 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.cta .btn {
+  background: #fff;
+  color: #3c6e47;
+}
+
+.cta .btn:hover {
+  background: #f0f0f0;
+}
+
+footer {
+  padding: 24px 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+footer span {
+  float: left;
+}
+
+footer a {
+  float: right;
+  color: #3c6e47;
+  text-decoration: none;
+}
+
+@media (max-width: 640px) {
+  .service {
+    float: none;
+    width: auto;
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+
+  .gallery-item {
+    float: left;
+    width: 47%;
+    margin-right: 6%;
+    margin-bottom: 10px;
+  }
+
+  .gallery-item:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  header .logo,
+  header .btn,
+  footer span,
+  footer a {
+    float: none;
+    display: block;
     text-align: center;
-}
-
-#right
-{
-    flex: 1;
-}
-
-#reklam {
-    text-align: center;
-    background-color: red;
-    width: 270px;
-    border-radius: 270px;
-    border: rgb(163, 0, 0) solid 3px;
-    margin: 0 auto;
-    
-}
-
-#now {
-font-size: 25px;
-font-weight: 900;
-color: white;
-margin: 0;
-padding: 0;
-}
-#rabatt {
-    margin: 0;
-    padding: 0;
-    color: white;
+    margin-bottom: 8px;
+  }
 }
