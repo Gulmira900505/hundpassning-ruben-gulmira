@@ -19,7 +19,8 @@ button {
 
 main {
     padding: 20px;
-
+    display: grid;
+    grid-template-columns: auto auto;
 }
 
 footer {
@@ -28,11 +29,54 @@ footer {
     margin-top: 30px;
 }
 
+#hundbild {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#hundbild img:first-child {
+    border-radius: 15px 15px 0px 0px;
+}
+
+#hundbild img:last-child {
+    border-radius: 0px 0px 15px 15px;
+}
+
+form button {
+    background: #3c6e47;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
 @media (max-width: 600px) {
     form {
         max-width: 100%;
     }
     main {
         padding: 10px;
+    }
+}
+
+@media (max-width: 1100px) {
+
+    form {
+        width: 500px;
+    }
+
+    #form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    main {
+        grid-template-columns: auto;
+    }
+    #hundbild {
+        margin: 35px auto;
+        max-width: 700px;
     }
 }

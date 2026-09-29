@@ -122,14 +122,21 @@ header {
   font-size: 0.95rem;
 }
 
+.bilder {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 15px;
+}
+
 .bilder-del {
   padding-top: 20px;
   padding-bottom: 44px;
 }
 
 .bilder img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 200px;
+  object-fit: cover;
   margin-bottom: 15px;
   border-radius: 5px;
 }
@@ -187,6 +194,7 @@ footer {
   text-align: center;
   font-size: 0.9rem;
   color: #777;
+  margin-bottom: 20px;
 }
 
 footer span {
